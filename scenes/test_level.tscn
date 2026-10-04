@@ -1,0 +1,240 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/granero.tscn" id="granero"]
+[ext_resource type="PackedScene" path="res://scenes/heno.tscn" id="heno"]
+[ext_resource type="PackedScene" path="res://scenes/player.tscn" id="player"]
+[ext_resource type="TileSet" path="res://assets/Tilemap/granja_tileset.tres" id="tileset"]
+[ext_resource type="Texture2D" path="res://assets/Tiles/tile_0003.png" id="tx3"]
+[ext_resource type="Texture2D" path="res://assets/Tiles/tile_0008.png" id="tx8"]
+[ext_resource type="Texture2D" path="res://assets/Tiles/tile_0015.png" id="tx15"]
+[ext_resource type="Texture2D" path="res://assets/Tiles/tile_0020.png" id="tx20"]
+[ext_resource type="Texture2D" path="res://assets/Tiles/tile_0032.png" id="tx32"]
+[ext_resource type="Texture2D" path="res://assets/Tiles/tile_0039.png" id="tx39"]
+[ext_resource type="Texture2D" path="res://assets/Tiles/tile_0044.png" id="tx44"]
+[ext_resource type="Texture2D" path="res://assets/Tiles/tile_0056.png" id="tx56"]
+[ext_resource type="Texture2D" path="res://assets/Tiles/tile_0068.png" id="tx68"]
+[ext_resource type="Texture2D" path="res://assets/Tiles/tile_0083.png" id="tx83"]
+[ext_resource type="Texture2D" path="res://assets/Tiles/tile_0089.png" id="tx89"]
+[ext_resource type="Texture2D" path="res://assets/Tiles/tile_0097.png" id="tx97"]
+[ext_resource type="Texture2D" path="res://assets/Tiles/tile_0120.png" id="tx120"]
+[ext_resource type="Texture2D" path="res://assets/Tiles/tile_0121.png" id="tx121"]
+[ext_resource type="Texture2D" path="res://assets/Tiles/tile_0122.png" id="tx122"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_suelo"]
+size = Vector2(7168, 600)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pared"]
+size = Vector2(100, 3000)
+
+[node name="TestLevel" type="Node2D"]
+
+[node name="Decorado" type="Node2D" parent="."]
+
+[node name="Granero" parent="Decorado" instance=ExtResource("granero")]
+position = Vector2(-900, -256)
+
+[node name="Pino1" type="Sprite2D" parent="Decorado"]
+z_index = -4
+position = Vector2(-1500, -60)
+scale = Vector2(10, 10)
+texture = ExtResource("tx15")
+
+[node name="Pino2" type="Sprite2D" parent="Decorado"]
+z_index = -4
+position = Vector2(-450, -60)
+scale = Vector2(10, 10)
+texture = ExtResource("tx15")
+
+[node name="Pino3" type="Sprite2D" parent="Decorado"]
+z_index = -4
+position = Vector2(1450, -60)
+scale = Vector2(10, 10)
+texture = ExtResource("tx15")
+
+[node name="Pino4" type="Sprite2D" parent="Decorado"]
+z_index = -4
+position = Vector2(2700, -60)
+scale = Vector2(10, 10)
+texture = ExtResource("tx15")
+
+[node name="Pino5" type="Sprite2D" parent="Decorado"]
+z_index = -4
+position = Vector2(3400, -60)
+scale = Vector2(10, 10)
+texture = ExtResource("tx15")
+
+[node name="Pino6" type="Sprite2D" parent="Decorado"]
+z_index = -4
+position = Vector2(3000, -96)
+scale = Vector2(12, 12)
+texture = ExtResource("tx3")
+
+[node name="Girasol1" type="Sprite2D" parent="Decorado"]
+z_index = -3
+position = Vector2(-190, -80)
+scale = Vector2(10, 10)
+texture = ExtResource("tx83")
+
+[node name="Girasol2" type="Sprite2D" parent="Decorado"]
+z_index = -3
+position = Vector2(2850, -80)
+scale = Vector2(10, 10)
+texture = ExtResource("tx83")
+
+[node name="Arbusto1" type="Sprite2D" parent="Decorado"]
+z_index = -3
+position = Vector2(-120, -48)
+scale = Vector2(8, 8)
+texture = ExtResource("tx39")
+
+[node name="Arbusto2" type="Sprite2D" parent="Decorado"]
+z_index = -3
+position = Vector2(1300, -48)
+scale = Vector2(8, 8)
+texture = ExtResource("tx39")
+
+[node name="Arbusto3" type="Sprite2D" parent="Decorado"]
+z_index = -3
+position = Vector2(3700, -48)
+scale = Vector2(8, 8)
+texture = ExtResource("tx39")
+
+[node name="Piedras" type="Sprite2D" parent="Decorado"]
+z_index = -3
+position = Vector2(1700, -42)
+scale = Vector2(6, 6)
+texture = ExtResource("tx89")
+
+[node name="Cultivo1" type="Sprite2D" parent="Decorado"]
+z_index = -3
+position = Vector2(1900, -64)
+scale = Vector2(8, 8)
+texture = ExtResource("tx8")
+
+[node name="Cultivo2" type="Sprite2D" parent="Decorado"]
+z_index = -3
+position = Vector2(2050, -64)
+scale = Vector2(8, 8)
+texture = ExtResource("tx20")
+
+[node name="Cultivo3" type="Sprite2D" parent="Decorado"]
+z_index = -3
+position = Vector2(2200, -56)
+scale = Vector2(8, 8)
+texture = ExtResource("tx32")
+
+[node name="Cultivo4" type="Sprite2D" parent="Decorado"]
+z_index = -3
+position = Vector2(2350, -56)
+scale = Vector2(8, 8)
+texture = ExtResource("tx44")
+
+[node name="Cultivo5" type="Sprite2D" parent="Decorado"]
+z_index = -3
+position = Vector2(2500, -48)
+scale = Vector2(8, 8)
+texture = ExtResource("tx56")
+
+[node name="Cultivo6" type="Sprite2D" parent="Decorado"]
+z_index = -3
+position = Vector2(2650, -56)
+scale = Vector2(8, 8)
+texture = ExtResource("tx68")
+
+[node name="Gallina" type="Sprite2D" parent="Decorado"]
+z_index = -2
+position = Vector2(2450, -42)
+scale = Vector2(6, 6)
+texture = ExtResource("tx122")
+
+[node name="Oveja" type="Sprite2D" parent="Decorado"]
+z_index = -2
+position = Vector2(2600, -49)
+scale = Vector2(7, 7)
+texture = ExtResource("tx120")
+
+[node name="Vaca" type="Sprite2D" parent="Decorado"]
+z_index = -2
+position = Vector2(2780, -49)
+scale = Vector2(7, 7)
+texture = ExtResource("tx121")
+
+[node name="Suelo" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Suelo"]
+position = Vector2(1500, 300)
+shape = SubResource("RectangleShape2D_suelo")
+
+[node name="Tierra" type="ColorRect" parent="Suelo"]
+z_index = -10
+offset_left = -2048.0
+offset_top = 0.0
+offset_right = 5120.0
+offset_bottom = 1400.0
+color = Color(0.72, 0.45, 0.3, 1)
+
+[node name="Labrado" type="TileMapLayer" parent="Suelo"]
+z_index = -9
+position = Vector2(0, -32)
+scale = Vector2(8, 8)
+tile_map_data = PackedByteArray(0, 0, 240, 255, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 240, 255, 1, 0, 0, 0, 0, 0, 5, 0, 0, 0, 241, 255, 0, 0, 0, 0, 2, 0, 4, 0, 0, 0, 241, 255, 1, 0, 0, 0, 2, 0, 5, 0, 0, 0, 242, 255, 0, 0, 0, 0, 1, 0, 4, 0, 0, 0, 242, 255, 1, 0, 0, 0, 1, 0, 5, 0, 0, 0, 243, 255, 0, 0, 0, 0, 2, 0, 4, 0, 0, 0, 243, 255, 1, 0, 0, 0, 2, 0, 5, 0, 0, 0, 244, 255, 0, 0, 0, 0, 1, 0, 4, 0, 0, 0, 244, 255, 1, 0, 0, 0, 1, 0, 5, 0, 0, 0, 245, 255, 0, 0, 0, 0, 2, 0, 4, 0, 0, 0, 245, 255, 1, 0, 0, 0, 2, 0, 5, 0, 0, 0, 246, 255, 0, 0, 0, 0, 1, 0, 4, 0, 0, 0, 246, 255, 1, 0, 0, 0, 1, 0, 5, 0, 0, 0, 247, 255, 0, 0, 0, 0, 2, 0, 4, 0, 0, 0, 247, 255, 1, 0, 0, 0, 2, 0, 5, 0, 0, 0, 248, 255, 0, 0, 0, 0, 1, 0, 4, 0, 0, 0, 248, 255, 1, 0, 0, 0, 1, 0, 5, 0, 0, 0, 249, 255, 0, 0, 0, 0, 2, 0, 4, 0, 0, 0, 249, 255, 1, 0, 0, 0, 2, 0, 5, 0, 0, 0, 250, 255, 0, 0, 0, 0, 1, 0, 4, 0, 0, 0, 250, 255, 1, 0, 0, 0, 1, 0, 5, 0, 0, 0, 251, 255, 0, 0, 0, 0, 2, 0, 4, 0, 0, 0, 251, 255, 1, 0, 0, 0, 2, 0, 5, 0, 0, 0, 252, 255, 0, 0, 0, 0, 1, 0, 4, 0, 0, 0, 252, 255, 1, 0, 0, 0, 1, 0, 5, 0, 0, 0, 253, 255, 0, 0, 0, 0, 2, 0, 4, 0, 0, 0, 253, 255, 1, 0, 0, 0, 2, 0, 5, 0, 0, 0, 254, 255, 0, 0, 0, 0, 1, 0, 4, 0, 0, 0, 254, 255, 1, 0, 0, 0, 1, 0, 5, 0, 0, 0, 255, 255, 0, 0, 0, 0, 2, 0, 4, 0, 0, 0, 255, 255, 1, 0, 0, 0, 2, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 4, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0, 0, 0, 1, 0, 0, 0, 0, 0, 2, 0, 4, 0, 0, 0, 1, 0, 1, 0, 0, 0, 2, 0, 5, 0, 0, 0, 2, 0, 0, 0, 0, 0, 1, 0, 4, 0, 0, 0, 2, 0, 1, 0, 0, 0, 1, 0, 5, 0, 0, 0, 3, 0, 0, 0, 0, 0, 2, 0, 4, 0, 0, 0, 3, 0, 1, 0, 0, 0, 2, 0, 5, 0, 0, 0, 4, 0, 0, 0, 0, 0, 1, 0, 4, 0, 0, 0, 4, 0, 1, 0, 0, 0, 1, 0, 5, 0, 0, 0, 5, 0, 0, 0, 0, 0, 2, 0, 4, 0, 0, 0, 5, 0, 1, 0, 0, 0, 2, 0, 5, 0, 0, 0, 6, 0, 0, 0, 0, 0, 1, 0, 4, 0, 0, 0, 6, 0, 1, 0, 0, 0, 1, 0, 5, 0, 0, 0, 7, 0, 0, 0, 0, 0, 2, 0, 4, 0, 0, 0, 7, 0, 1, 0, 0, 0, 2, 0, 5, 0, 0, 0, 8, 0, 0, 0, 0, 0, 1, 0, 4, 0, 0, 0, 8, 0, 1, 0, 0, 0, 1, 0, 5, 0, 0, 0, 9, 0, 0, 0, 0, 0, 2, 0, 4, 0, 0, 0, 9, 0, 1, 0, 0, 0, 2, 0, 5, 0, 0, 0, 10, 0, 0, 0, 0, 0, 1, 0, 4, 0, 0, 0, 10, 0, 1, 0, 0, 0, 1, 0, 5, 0, 0, 0, 11, 0, 0, 0, 0, 0, 2, 0, 4, 0, 0, 0, 11, 0, 1, 0, 0, 0, 2, 0, 5, 0, 0, 0, 12, 0, 0, 0, 0, 0, 1, 0, 4, 0, 0, 0, 12, 0, 1, 0, 0, 0, 1, 0, 5, 0, 0, 0, 13, 0, 0, 0, 0, 0, 2, 0, 4, 0, 0, 0, 13, 0, 1, 0, 0, 0, 2, 0, 5, 0, 0, 0, 14, 0, 0, 0, 0, 0, 1, 0, 4, 0, 0, 0, 14, 0, 1, 0, 0, 0, 1, 0, 5, 0, 0, 0, 15, 0, 0, 0, 0, 0, 2, 0, 4, 0, 0, 0, 15, 0, 1, 0, 0, 0, 2, 0, 5, 0, 0, 0, 16, 0, 0, 0, 0, 0, 1, 0, 4, 0, 0, 0, 16, 0, 1, 0, 0, 0, 1, 0, 5, 0, 0, 0, 17, 0, 0, 0, 0, 0, 2, 0, 4, 0, 0, 0, 17, 0, 1, 0, 0, 0, 2, 0, 5, 0, 0, 0, 18, 0, 0, 0, 0, 0, 1, 0, 4, 0, 0, 0, 18, 0, 1, 0, 0, 0, 1, 0, 5, 0, 0, 0, 19, 0, 0, 0, 0, 0, 2, 0, 4, 0, 0, 0, 19, 0, 1, 0, 0, 0, 2, 0, 5, 0, 0, 0, 20, 0, 0, 0, 0, 0, 1, 0, 4, 0, 0, 0, 20, 0, 1, 0, 0, 0, 1, 0, 5, 0, 0, 0, 21, 0, 0, 0, 0, 0, 2, 0, 4, 0, 0, 0, 21, 0, 1, 0, 0, 0, 2, 0, 5, 0, 0, 0, 22, 0, 0, 0, 0, 0, 1, 0, 4, 0, 0, 0, 22, 0, 1, 0, 0, 0, 1, 0, 5, 0, 0, 0, 23, 0, 0, 0, 0, 0, 2, 0, 4, 0, 0, 0, 23, 0, 1, 0, 0, 0, 2, 0, 5, 0, 0, 0, 24, 0, 0, 0, 0, 0, 1, 0, 4, 0, 0, 0, 24, 0, 1, 0, 0, 0, 1, 0, 5, 0, 0, 0, 25, 0, 0, 0, 0, 0, 2, 0, 4, 0, 0, 0, 25, 0, 1, 0, 0, 0, 2, 0, 5, 0, 0, 0, 26, 0, 0, 0, 0, 0, 1, 0, 4, 0, 0, 0, 26, 0, 1, 0, 0, 0, 1, 0, 5, 0, 0, 0, 27, 0, 0, 0, 0, 0, 2, 0, 4, 0, 0, 0, 27, 0, 1, 0, 0, 0, 2, 0, 5, 0, 0, 0, 28, 0, 0, 0, 0, 0, 1, 0, 4, 0, 0, 0, 28, 0, 1, 0, 0, 0, 1, 0, 5, 0, 0, 0, 29, 0, 0, 0, 0, 0, 2, 0, 4, 0, 0, 0, 29, 0, 1, 0, 0, 0, 2, 0, 5, 0, 0, 0, 30, 0, 0, 0, 0, 0, 1, 0, 4, 0, 0, 0, 30, 0, 1, 0, 0, 0, 1, 0, 5, 0, 0, 0, 31, 0, 0, 0, 0, 0, 2, 0, 4, 0, 0, 0, 31, 0, 1, 0, 0, 0, 2, 0, 5, 0, 0, 0, 32, 0, 0, 0, 0, 0, 1, 0, 4, 0, 0, 0, 32, 0, 1, 0, 0, 0, 1, 0, 5, 0, 0, 0, 33, 0, 0, 0, 0, 0, 2, 0, 4, 0, 0, 0, 33, 0, 1, 0, 0, 0, 2, 0, 5, 0, 0, 0, 34, 0, 0, 0, 0, 0, 1, 0, 4, 0, 0, 0, 34, 0, 1, 0, 0, 0, 1, 0, 5, 0, 0, 0, 35, 0, 0, 0, 0, 0, 2, 0, 4, 0, 0, 0, 35, 0, 1, 0, 0, 0, 2, 0, 5, 0, 0, 0, 36, 0, 0, 0, 0, 0, 1, 0, 4, 0, 0, 0, 36, 0, 1, 0, 0, 0, 1, 0, 5, 0, 0, 0, 37, 0, 0, 0, 0, 0, 2, 0, 4, 0, 0, 0, 37, 0, 1, 0, 0, 0, 2, 0, 5, 0, 0, 0, 38, 0, 0, 0, 0, 0, 1, 0, 4, 0, 0, 0, 38, 0, 1, 0, 0, 0, 1, 0, 5, 0, 0, 0, 39, 0, 0, 0, 0, 0, 2, 0, 4, 0, 0, 0, 39, 0, 1, 0, 0, 0, 2, 0, 5, 0, 0, 0, 40, 0, 0, 0, 0, 0, 3, 0, 4, 0, 0, 0, 40, 0, 1, 0, 0, 0, 3, 0, 5, 0, 0, 0)
+tile_set = ExtResource("tileset")
+
+[node name="Limites" type="StaticBody2D" parent="."]
+
+[node name="Izquierda" type="CollisionShape2D" parent="Limites"]
+position = Vector2(-2100, -1000)
+shape = SubResource("RectangleShape2D_pared")
+
+[node name="Derecha" type="CollisionShape2D" parent="Limites"]
+position = Vector2(5170, -1000)
+shape = SubResource("RectangleShape2D_pared")
+
+[node name="PilaDeHeno" type="Node2D" parent="."]
+
+[node name="Heno1" parent="PilaDeHeno" instance=ExtResource("heno")]
+position = Vector2(520, -64)
+
+[node name="Heno2" parent="PilaDeHeno" instance=ExtResource("heno")]
+position = Vector2(648, -64)
+
+[node name="Sprite2D" parent="PilaDeHeno/Heno2" index="0"]
+texture = ExtResource("tx97")
+
+[node name="Heno3" parent="PilaDeHeno" instance=ExtResource("heno")]
+position = Vector2(648, -192)
+
+[node name="Heno4" parent="PilaDeHeno" instance=ExtResource("heno")]
+position = Vector2(776, -64)
+
+[node name="Sprite2D" parent="PilaDeHeno/Heno4" index="0"]
+texture = ExtResource("tx97")
+
+[node name="Heno5" parent="PilaDeHeno" instance=ExtResource("heno")]
+position = Vector2(776, -192)
+
+[node name="Heno6" parent="PilaDeHeno" instance=ExtResource("heno")]
+position = Vector2(776, -320)
+
+[node name="Sprite2D" parent="PilaDeHeno/Heno6" index="0"]
+texture = ExtResource("tx97")
+
+[node name="Heno7" parent="PilaDeHeno" instance=ExtResource("heno")]
+position = Vector2(904, -64)
+
+[node name="Heno8" parent="PilaDeHeno" instance=ExtResource("heno")]
+position = Vector2(904, -192)
+
+[node name="Sprite2D" parent="PilaDeHeno/Heno8" index="0"]
+texture = ExtResource("tx97")
+
+[node name="Heno9" parent="PilaDeHeno" instance=ExtResource("heno")]
+position = Vector2(1032, -64)
+
+[node name="Player" parent="." instance=ExtResource("player")]
+position = Vector2(0, -200)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2(0, -100)
+zoom = Vector2(0.7, 0.7)
+position_smoothing_enabled = true

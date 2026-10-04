@@ -1,0 +1,77 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://assets/Tiles/tile_0090.png" id="t90"]
+[ext_resource type="Texture2D" path="res://assets/Tiles/tile_0091.png" id="t91"]
+[ext_resource type="Texture2D" path="res://assets/Tiles/tile_0092.png" id="t92"]
+[ext_resource type="Texture2D" path="res://assets/Tiles/tile_0102.png" id="t102"]
+[ext_resource type="Texture2D" path="res://assets/Tiles/tile_0103.png" id="t103"]
+[ext_resource type="Texture2D" path="res://assets/Tiles/tile_0104.png" id="t104"]
+[ext_resource type="Texture2D" path="res://assets/Tiles/tile_0114.png" id="t114"]
+[ext_resource type="Texture2D" path="res://assets/Tiles/tile_0115.png" id="t115"]
+[ext_resource type="Texture2D" path="res://assets/Tiles/tile_0116.png" id="t116"]
+[ext_resource type="Texture2D" path="res://assets/Tiles/tile_0126.png" id="t126"]
+[ext_resource type="Texture2D" path="res://assets/Tiles/tile_0127.png" id="t127"]
+[ext_resource type="Texture2D" path="res://assets/Tiles/tile_0128.png" id="t128"]
+
+[node name="Granero" type="Node2D"]
+z_index = -6
+
+[node name="T00" type="Sprite2D" parent="."]
+position = Vector2(-128, -192)
+scale = Vector2(8, 8)
+texture = ExtResource("t90")
+
+[node name="T01" type="Sprite2D" parent="."]
+position = Vector2(0, -192)
+scale = Vector2(8, 8)
+texture = ExtResource("t91")
+
+[node name="T02" type="Sprite2D" parent="."]
+position = Vector2(128, -192)
+scale = Vector2(8, 8)
+texture = ExtResource("t92")
+
+[node name="T10" type="Sprite2D" parent="."]
+position = Vector2(-128, -64)
+scale = Vector2(8, 8)
+texture = ExtResource("t102")
+
+[node name="T11" type="Sprite2D" parent="."]
+position = Vector2(0, -64)
+scale = Vector2(8, 8)
+texture = ExtResource("t103")
+
+[node name="T12" type="Sprite2D" parent="."]
+position = Vector2(128, -64)
+scale = Vector2(8, 8)
+texture = ExtResource("t104")
+
+[node name="T20" type="Sprite2D" parent="."]
+position = Vector2(-128, 64)
+scale = Vector2(8, 8)
+texture = ExtResource("t114")
+
+[node name="T21" type="Sprite2D" parent="."]
+position = Vector2(0, 64)
+scale = Vector2(8, 8)
+texture = ExtResource("t115")
+
+[node name="T22" type="Sprite2D" parent="."]
+position = Vector2(128, 64)
+scale = Vector2(8, 8)
+texture = ExtResource("t116")
+
+[node name="T30" type="Sprite2D" parent="."]
+position = Vector2(-128, 192)
+scale = Vector2(8, 8)
+texture = ExtResource("t126")
+
+[node name="T31" type="Sprite2D" parent="."]
+position = Vector2(0, 192)
+scale = Vector2(8, 8)
+texture = ExtResource("t127")
+
+[node name="T32" type="Sprite2D" parent="."]
+position = Vector2(128, 192)
+scale = Vector2(8, 8)
+texture = ExtResource("t128")
